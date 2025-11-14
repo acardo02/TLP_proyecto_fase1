@@ -22,7 +22,7 @@ def mostrar_tokens(cadena):
 
 def analisis_spacy(cadena):
     if nlp is None:
-        print("⚠ No fue posible ejecutar spaCy.")
+        print("No fue posible ejecutar spaCy.")
         return
 
     texto = cadena.replace(";$", "").strip()
@@ -40,9 +40,9 @@ def analisis_spacy(cadena):
 
     print("\nInterpretación:")
     print("- spaCy interpreta la oración como válida en español.")
-    print("- 'el' → determinante")
-    print("- 'perro' → sustantivo")
-    print("- 'come' → verbo (raíz de la oración)")
+    print("- 'el'-> determinante")
+    print("- 'perro'-> sustantivo")
+    print("- 'come' -> verbo (raíz de la oración)")
     print("=== Fin de análisis spaCy ===\n")
 
 
